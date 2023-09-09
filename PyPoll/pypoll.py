@@ -39,15 +39,11 @@ with open("C:/Users/ormon/OneDrive/Desktop/python-challenge/PyPoll/analysis/PyPo
     election_results = (
         f"Election Results"
         f"\n"
-        f"\n"
         f"-------------------------"
-        f"\n"
         f"\n"
         f"Total Votes: {total_votes}"
         f"\n"
-        f"\n"
-        f"-------------------------"
-        f"\n")
+        f"-------------------------")
 
     #print election results to terminal
     print(election_results)
@@ -78,25 +74,19 @@ with open("C:/Users/ormon/OneDrive/Desktop/python-challenge/PyPoll/analysis/PyPo
 
         #print current candidate, % of votes & count of votes to terminal
         print(f"{candidate}: {vote_percent:.3f}% ({votes})")
-        print("\n")
-
+     
         #print current candidate, % of votes & count of votes to text file
         textfile.write(f"{candidate}: {vote_percent:.3f}% ({votes})")
-        textfile.write("\n")
         textfile.write("\n")
 
     #print the winner's name to the terminal
     print("------------------------------------")
-    print("\n")
     print("Winner: " + winner_name)
-    print("\n")
     print("------------------------------------")
 
     #print the winner's name to the text file
     textfile.write("------------------------------------")
-    textfile.write("\n")
-    textfile.write("\n")   
+    textfile.write("\n")  
     textfile.write("Winner: " + winner_name)
-    textfile.write("\n")
     textfile.write("\n")
     textfile.write("------------------------------------")
