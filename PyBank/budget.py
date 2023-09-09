@@ -70,6 +70,8 @@ greatest_increase = max(min_max_dict.items(), key=lambda x: int(x[1]))
 greatest_decrease = min(min_max_dict.items(), key=lambda x: int(x[1]))
 
 #print output to the terminal
+print("Financial Analysis")
+print("----------------------------------")
 print(f"Total Months: {len(month)}")
 print(f"Total: ${sum(profit_loss)}")   
 print(f"Average Change: ${average_change}")
@@ -83,6 +85,10 @@ output_file = os.path.join('C:/Users/ormon/OneDrive/Desktop/python-challenge/PyB
 with open(output_file, "w") as textfile:
 
     #print output to text file
+    textfile.write("Financial Analysis")
+    textfile.write("\n")
+    textfile.write("----------------------------------")
+    textfile.write("\n")
     textfile.write(f"Total Months: {len(month)}")
     textfile.write("\n")
     textfile.write(f"Total: ${sum(profit_loss)}")  
